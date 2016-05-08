@@ -37,3 +37,5 @@ end
 
 # devise for authentication
 gem 'bootstrap-sass'
+
+gem 'bootstrap-switch-rails'
