@@ -36,6 +36,8 @@ group :development do
 end
 
 # devise for authentication
+gem 'devise'
+
 gem 'bootstrap-sass'
 
 gem 'bootstrap-switch-rails'
