@@ -36,3 +36,4 @@ group :development do
 end
 
 # devise for authentication
+gem 'bootstrap-sass'
