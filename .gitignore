@@ -17,3 +17,9 @@
 .byebug_history
 
 .keep
+
+.env
+
+dump.rdb
+
+post.md
