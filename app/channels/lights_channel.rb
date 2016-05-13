@@ -4,11 +4,8 @@ class LightsChannel < ApplicationCable::Channel
     stream_from "lights_channel"
   end
 
-  def unsubscribed
-    # Any cleanup needed when channel is unsubscribed
-  end
-
   def switch(data)
-    ActionCable.server.broadcast 'lights_channel', state: data['state'], type: data['type']
+    light = Light.find(data['type'])
+    light.update! state: data['state']
   end
 end
