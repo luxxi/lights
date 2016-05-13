@@ -42,3 +42,5 @@ gem 'devise'
 gem 'bootstrap-sass'
 
 gem 'bootstrap-switch-rails'
+
+gem 'particlerb'
