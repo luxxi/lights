@@ -1,4 +1,10 @@
-<input class="switch" data-type="one" type="checkbox" checked="">
-<br />
-<br />
-<input class="switch" data-type="two" type="checkbox" checked="">
+<% @lights.each do |light| %>
+  <div class="row">
+    <div class="col-md-3">
+      <%= label_tag light.name %>
+    </div>
+    <div class="col-md-4">
+      <%= check_box_tag light.name, light.id, light.state, class: 'switch', data: { type: light.id } %>
+    </div>
+  </div>
+<% end %>
